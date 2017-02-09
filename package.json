@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-graphql-tag",
+  "version": "0.0.0",
+  "description": "Babel plugin that compile GraphQL tagged template strings using apollographql/graphql-tag",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtmthf/babel-plugin-graphql-tag.git"
+  },
+  "author": "Jack Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtmthf/babel-plugin-graphql-tag/issues"
+  },
+  "homepage": "https://github.com/jtmthf/babel-plugin-graphql-tag#readme"
+}
