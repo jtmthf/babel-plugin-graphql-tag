@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/jtmthf/babel-plugin-graphql-tag/issues"
   },
-  "homepage": "https://github.com/jtmthf/babel-plugin-graphql-tag#readme"
+  "homepage": "https://github.com/jtmthf/babel-plugin-graphql-tag#readme",
+  "dependencies": {
+    "graphql": "^0.9.1",
+    "graphql-tag": "^1.2.4"
+  },
+  "devDependencies": {
+    "@types/babel-types": "^6.7.14",
+    "typescript": "^2.1.6"
+  }
 }
