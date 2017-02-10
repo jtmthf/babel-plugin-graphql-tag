@@ -1,10 +1,12 @@
 {
   "name": "babel-plugin-graphql-tag",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Babel plugin that compile GraphQL tagged template strings using apollographql/graphql-tag",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,11 +19,36 @@
   },
   "homepage": "https://github.com/jtmthf/babel-plugin-graphql-tag#readme",
   "dependencies": {
+    "babylon": "^6.15.0",
     "graphql": "^0.9.1",
     "graphql-tag": "^1.2.4"
   },
   "devDependencies": {
+    "@types/babel-core": "^6.7.14",
     "@types/babel-types": "^6.7.14",
+    "@types/babylon": "^6.7.15",
+    "@types/jest": "^18.1.1",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "jest": "^18.1.0",
+    "ts-jest": "^18.0.3",
+    "tslint": "^4.4.2",
     "typescript": "^2.1.6"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "__tests__/tsconfig.json"
+    },
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   }
 }

@@ -2,6 +2,13 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "outDir": "lib",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules", "__tests__"
+  ]
 }
